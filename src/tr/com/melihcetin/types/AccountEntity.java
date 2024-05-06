@@ -1,4 +1,4 @@
-package tr.com.melihcetin.entities;
+package tr.com.melihcetin.types;
 
 public class AccountEntity {
     private int id;

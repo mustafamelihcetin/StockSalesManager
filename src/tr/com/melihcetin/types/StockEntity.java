@@ -1,4 +1,4 @@
-package tr.com.melihcetin.entities;
+package tr.com.melihcetin.types;
 
 import java.sql.Date;
 
