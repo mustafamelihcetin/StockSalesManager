@@ -2,7 +2,7 @@ package tr.com.melihcetin.interfaces;
 
 import javax.swing.*;
 
-public interface UiInterfaces {
+public interface UIInterfaces {
     public void initWindow();
     public JPanel initPanel();
     public JMenuBar initBar();

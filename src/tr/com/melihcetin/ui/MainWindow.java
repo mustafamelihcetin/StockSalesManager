@@ -1,10 +1,11 @@
 package tr.com.melihcetin.ui;
 
-import tr.com.melihcetin.interfaces.UiInterfaces;
+import tr.com.melihcetin.interfaces.UIInterfaces;
+import tr.com.melihcetin.utilities.MenusUI;
 
 import javax.swing.*;
 
-public class MainWindow extends JFrame implements UiInterfaces {
+public class MainWindow extends JFrame implements UIInterfaces {
     public MainWindow(){
         initWindow();
     }
@@ -15,8 +16,10 @@ public class MainWindow extends JFrame implements UiInterfaces {
         JMenuBar bar = initBar();
 
         //add(tabs);
-        //setTitle("Stock and Sales Manager");
-        pack(); // Auto size
+        setJMenuBar(bar);
+        setTitle("Stock and Sales Manager (BETA)");
+        setSize(800,400);
+        //pack(); // Auto size
         setVisible(true);
         setLocationRelativeTo(null); // center
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -24,16 +27,20 @@ public class MainWindow extends JFrame implements UiInterfaces {
 
     @Override
     public JPanel initPanel() {
-        return null;
+        JPanel panel = new JPanel();
+
+        return panel;
     }
 
     @Override
     public JMenuBar initBar() {
-        return null;
+        JMenuBar bar = MenusUI.initBar();
+        return bar;
     }
 
     @Override
     public JTabbedPane initTabs() {
-        return null;
+        JTabbedPane tabs = new JTabbedPane();
+        return tabs;
     }
 }
