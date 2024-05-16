@@ -1,7 +1,6 @@
 package tr.com.melihcetin.core;
 
 import tr.com.melihcetin.interfaces.CoreInterfaces;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -20,7 +19,7 @@ public class ObjectHelper extends CoreFields implements CoreInterfaces {
         try {
             connection = DriverManager.getConnection(getUrl(),getUserName(),getPassword());
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         return connection;
     }

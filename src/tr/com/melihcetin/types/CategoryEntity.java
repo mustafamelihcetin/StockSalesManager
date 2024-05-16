@@ -31,10 +31,6 @@ public class CategoryEntity {
 
     @Override
     public String toString() {
-        return "CategoryEntity{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", parentId=" + parentId +
-                '}';
+        return name;
     }
 }

@@ -1,5 +1,6 @@
 package tr.com.melihcetin.utilities;
 
+import tr.com.melihcetin.ui.AddCategoryUI;
 import tr.com.melihcetin.ui.AddProductUI;
 
 import javax.swing.*;
@@ -19,8 +20,8 @@ public class MenusUI {
         bar.add(productsMenu);
         JMenuItem addProductItem = new JMenuItem("Add a new product");
         productsMenu.add(addProductItem);
-        JMenuItem categoryItem = new JMenuItem("Add a new category");
-        productsMenu.add(categoryItem);
+        JMenuItem addCategoryItem = new JMenuItem("Add a new category");
+        productsMenu.add(addCategoryItem);
         productsMenu.addSeparator();
         JMenuItem editProductItem = new JMenuItem("Edit product");
         productsMenu.add(editProductItem);
@@ -36,6 +37,13 @@ public class MenusUI {
                         new AddProductUI();
                     }
                 });
+            }
+        });
+
+        addCategoryItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AddCategoryUI();
             }
         });
 
