@@ -47,8 +47,6 @@ public class CategoryDAL extends ObjectHelper implements DALInterfaces<CategoryE
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
         return dataEntity;
     }
 

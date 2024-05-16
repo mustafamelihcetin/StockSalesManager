@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class ObjectHelper extends CoreFields implements CoreInterfaces {
     static{
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

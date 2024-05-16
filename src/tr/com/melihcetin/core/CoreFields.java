@@ -2,7 +2,7 @@ package tr.com.melihcetin.core;
 
 public class CoreFields {
     private String userName = "root";
-    private String password = "%password%";
+    private String password = "";
     private String url = "jdbc:mysql://localhost/StockSalesManager?useUnicode=true&characterEncoding=UTF-8";
 
 
